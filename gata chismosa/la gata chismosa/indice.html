@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi primera página en HTML"> <!--descripcion pag web-->
+  <meta name="author" content="Tu Nombre:kazu">
+
+  <title>la gata chismosa</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h1>la casa de la gata chismosa</h1> <!--lo que queda fijo en la cabecera de la pagina-->
+
+    <nav>
+      <ul> <!--cabecera-->
+        <li><a href="indice.html">inicio</a></li>
+        <li><a href="veterinarias.html">veterinarias</a></li>
+        <li class="dropdown"><a href="#">servicios felinos ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="gatos negros.html">peluqueria a domicilio</a></li>
+            <li><a href="gestos gatunos.html">tiendas de peluqueria</a></li>
+            <li><a href="hierba gatera.html">hoteles</a></li>
+            <li><a href="hierba gatera.html">adistramiento felino</a></li>
+            <li><a href="hierba gatera.html">tiendas economicas</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">cultura gatuna ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="gatos negros.html">los gatos negros</a></li>
+            <li><a href="gestos gatunos.html">gestos gatunos</a></li>
+            <li><a href="hierba gatera.html">hierba gatera</a></li>
+            <li><a href="alimentos peligroso.html">alimentos peligrosos</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">emergencias ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">intoxicacion</a></li>
+            <li><a href="gestos gatunos.html">atropellos</a></li>
+            <li><a href="hierba gatera.html">quemaduras</a></li>
+            <li><a href="alimentos peligroso.html">heridas menores</a></li>
+          </ul>
+          </li>
+        <li class="dropdown"><a href="#">servicios funebres ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="gatos negros.html">cremación</a></li>
+            <li><a href="gestos gatunos.html">taxidermia</a></li>
+            <li><a href="gestos gatunos.html">retratos de mascotas</a></li>
+          </ul>
+        </li>
+        <li><a href="/contacto.html">contacto</a></li>
+      </ul>
+    </nav> <!-- fin cabecera-->
+  </header>
+
+  <main> <!-- inicio carrucel-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="hierba gatera.html"><img src="imagenes/gato y hierba.webp" alt=""></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>LA HIERBA GATERA Y SUS PROPIEDADES</h5>
+            <p>como actua sobre los felinos,como usarla y cuando usarla</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="alimentos peligroso.html"><img src="imagenes/gato intoxicado.webp" alt=""></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>ALIMENTOS PELIGROSOS Y COMO ACTUAR</h5>
+            <p>conosca los alimentos y hierbas peligrosas para su gato</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="gatos negros.html"><img src="imagenes/gatonegro.webp" alt=""></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>LOS MISTERIOSOS GATOS NEGROS</h5>
+            <p>sus origenes historicos y cientificos demas de su caracter particular</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main> <!-- fin carrucel-->
+
+  <footer>
+    <p>actualizado al: </p>
+    <p class="fecha"> 01-01-25 </p> <!--para poner fecha automatica-->
+  </footer>
+
+  <script src="js/scripts.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

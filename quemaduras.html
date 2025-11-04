@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primera página en HTML"> <!--descripcion pag web-->
+    <meta name="author" content="Tu Nombre:kazu">
+
+  <title>la gata chismosa</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+    <h1>la casa de la gata chismosa</h1> <!--lo que queda fijo en la cabecera de la pagina-->
+
+    <nav>
+      <ul> <!--cabecera-->
+        <li><a href="indice.html">inicio</a></li>
+        <li><a href="#">veterinarias</a></li>
+        <li><a href="#">peluqueria</a></li>
+        <li class="dropdown"><a href="#">cultura gatuna ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="gatos negros.html">los gatos negros</a></li>
+            <li><a href="gestos gatunos.html">gestos gatunos</a></li>
+            <li><a href="hierba gatera.html">hierba gatera</a></li>
+          </ul>
+        </li>
+        <li><a href="#">emergencias</a></li>
+        <li><a href="#">servicios funebres</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </nav> <!-- fin cabecera-->
+  </header>
+
+    <main class="principal">
+    <!--inicio texto explicativo-->
+    <h1>quemaduras en gatos y como actuar</h1>
+    <div class="contenedorhierba">
+      <img src="imagenes/gato-quemado.webp" class="image-02" alt="">
+      <p class="contenidoprincipal"> Las quemaduras en gatos pueden causar enrojecimiento, ampollas, inflamación y 
+        dolor, dependiendo de la gravedad. Ante una quemadura, enfría la zona con agua a temperatura natural y busca 
+        atención veterinaria de inmediato. El veterinario limpiará la zona, aplicará tratamiento para el dolor y la 
+        infección, y evitará que el gato se lama la herida con un collar isabelino.Las quemaduras son lesiones de los 
+        tejidos causadas por la exposición a calor extremo, químicos, electricidad o radiación. Se clasifican en tres 
+        grados según la profundidad del daño y son Quemaduras de primer grado: Afectan solo la capa superficial de la 
+        piel (epidermis).Quemaduras de segundo grado: Afectan la epidermis y la dermis superficial.Quemaduras de 
+        tercer grado: Afectan todas las capas de la piel y pueden llegar a tejidos subyacentes como músculos y huesos.
+    </div>
+    <div>
+      <ol>
+        <h3>Primeros auxilios y tratamiento</h3>
+        <li><b>Enfriamiento: </b>Aplicar agua fría sobre la zona afectada durante 10-15 minutos para reducir el 
+          daño térmico. NO USAR HIELO directamente sobre la quemadura.</li>
+            <br>
+        <li><b>Limpieza de la herida: </b>Limpiar la zona afectada con solución salina estéril.</li>
+            <br>
+        <li><b>Vendajes: </b>Cubrir la herida con vendajes estériles y con una gaza limpia para que el animal no se lama</li>
+            <br>
+        <li><b>LLEVAR DE URGENCIAS AL VETERINARIO: </b>solo el especialista puede evaluar y dar medicamentos adecuados para
+          desinflamar la herida y ayudar al dolor con medicamentos.</li>
+      </ol>
+    </p> 
+   </div>  <!--fin texto explicativo-->
+
+    <!--inicio dato en recuadro-->
+    <p class="parrafo">NUNCA USAR HIELO SOBRE UNA QUEMADURA, ESTO SOLO PROVOCARA UN DAÑO MAYOR AL EXPUESTO.
+    </p> <!--fin dato en recuadro-->
+
+    <h1>Causas de las quemaduras</h1> <!--inicio 2do contenido-->
+    <div class="contenedorgatorelajado">
+      <p class="contenidoprincipal"> las causas de una quemadura pueden ser de diversos tipos por lo que la precaucion siempre
+         es primero. a continuacion te dejamos las causas donde mas se presentan una quemadura.
+      </div>
+<div>
+      <ol>
+        <li><b>Quemaduras por radiación: </b> Exposición prolongada a la luz solar sin protección adecuada.Limita 
+          la exposición al sol de tu gato, especialmente durante las horas de mayor intensidad. Si es posible, 
+          sácalo a pasear temprano por la mañana o al atardecer.estas quemaduras pasan en gatos sin pelo o razurados
+          en epocas de calor por su gran melena</li>
+            <br>
+        <li><b>quemaduras Térmicas: </b>Contacto con objetos calientes, líquidos en ebullición o incendios.Ten 
+          cuidado con las fuentes de calor como estufas, velas, o líquidos calientes.</li>
+            <br>
+        <li><b>quemaduras Químicas: </b>Exposición a productos de limpieza, ácidos o alcalinos fuertes.Mantén los productos químicos, 
+          como limpiadores, disolventes y ácidos, fuera del alcance de tu gato. </li>
+            <br>
+        <li><b>quemaduras Eléctricas: </b>Masticación de cables eléctricos o descargas eléctricas.</li>
+      </ol>
+    </p> 
+   </div> 
+   <img src="imagenes/quemaduras_gatos.webp" class="image-02" alt=""> <!--fin texto explicativo-->
+   
+
+    <!--fin contenido segundo-->
+    <p>ingresar comentario</p>  <!-- fin-->
+    <form> 
+    <input type="text" id="mensaje" placeholder="dejar mensaje">
+      <button id="btnenviar">enviar</button>
+    </form>   <!--aqui termina ingreso formula para formulario-->
+    <form>     <!--como meter texto crudo-->
+      <p id="prueba"></p> <!--texto:atte.kazu-->
+    </form>    <!--aqui termina como meter texto crudo-->
+
+    <div class="container">      <!--aqui comienza contenedores-->
+     <div class="col"><a href="hierba gatera.html">la hierba gatera y sus propiedades</a></div>
+     <div class="col"><a href="indice.html">inicio</a></div>
+     <div class="col"><a href="intoxicaciones.html">intoxicaciones felinas</a></div>
+  </div>
+  
+  </main>
+   <footer>
+    <p>actualizado al: </p>
+    <p class= "fecha"> 01-01-25 </p>   <!--para poner fecha automatica-->
+  </footer>
+
+  <script src="js/scripts.js"></script>
+    
+    
+</body>
+</html>

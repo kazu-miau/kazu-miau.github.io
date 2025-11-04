@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Merienda:wght@300..900&display=swap');
+
+header {
+  background-color: #601111;
+  color: rgb(4, 255, 0);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0 0;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Merienda", cursive;
+}
+
+nav {
+  /* cabecera*/
+  background-color: #5955cd;
+  padding: 8px;
+
+}
+main {
+  flex: 1;
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #f0f2f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f5f908;
+}
+
+/* fecha actualizacion*/
+footer {
+  background-color: #601111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  /*
+  display: flex;
+  */
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+.principal {
+  background-color: #82bc35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+}
+
+/* texto principal*/
+.contenidoprincipal {
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 50;
+  text-align:left;
+  margin-right: 20px;
+  margin-left: 15px;
+
+}
+
+/* dato curioso*/
+.parrafo {
+  color: rgb(12, 5, 79);
+  font-family: Helvetica, sans-serif, cursive;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: none;
+  /* para subrrallar texto*/
+  text-transform: capitalize;
+  padding: 40px;
+  border-width: 10px;
+  border-color: rgb(96, 10, 73);
+  border-style: double;
+  border-radius: 100px;
+}
+
+  /* diseño de los contenedores*/
+.container {
+  background-color: #82bc35;
+  justify-content: space-between;
+
+}
+
+.col {
+  background-color: #82bc35;
+  color: #f0f2f0;
+  font-size: 20px;
+  width: 300px;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* fin de diseños contenedores*/
+
+
+/*para esconder menu o cambiar cuando se ve en fono vs compu*/
+/*Telefono*/
+@media (min-width:0px) and (max-width: 767px){
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle:checked+.menu-icon+.navbar {
+    display: flex;
+  }
+  .image-03 {
+   display: none;
+  }
+  .image-02{
+    display: none;
+  }
+  .image-00 {
+    display: none;
+  }
+
+}
+
+/*Tablet*/
+@media (min-width:768px) and (max-width: 1023px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle:checked+.menu-icon+.navbar {
+    display: flex;
+  }
+}
+
+/*pc*/
+@media (min-width:1024px) {
+  nav ul {
+    flex-direction: row;
+  }
+    .container{
+    display: flex;
+  }
+}
+
+/*fin*/
+
+/*cotenedor gato relajado he imagenes*/
+.image-03 {
+  width: 450px;
+  height: 315px;
+}
+.contenedorgatorelajado {
+  display:flex;
+  justify-content: right;
+  margin-right: 20px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+/*cotenedor gato y hierba*/
+.image-02 {
+  width: 450px;
+  height: 250px;
+  margin-left: 15px;
+}
+.contenedorhierba {
+  display:flex;
+  justify-content:right;
+  margin-right: 20px;
+  margin-left: 15px;
+  text-align: right;
+}
+
+/*cotenedor gato negro*/
+.image-00 {
+  width: 450px;
+  height: 250px;
+  margin-left: 15px;
+}
+.gatonegro1 {
+  display:flex;
+  justify-content:right;
+  margin-right: 20px;
+  margin-left: 15px;
+  text-align: right;
+}
+
+/* Dropdown desplegable de cultura gatuna */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  /*
+  top: 100%;
+  left: 0;
+  */
+  background-color: #f2f2f2;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+  color: #449c0a;
+  display: block;
+}
+
+/* Mostrar el menú al pasar el ratón */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Pequeño efecto hover */
+.dropdown-menu li:hover {
+  background-color: #ddd;
+}
+
+/* fin desplegable de cultura gatuna */
+
+/* animacion de boton hacia arriba*/
+button:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+/* carrucel*/
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+}
+.carousel-caption {
+  background-color: rgba(23, 230, 40, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}

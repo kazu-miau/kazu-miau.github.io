@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primera página en HTML">   <!--descripcion pag web-->
+    <meta name="author" content="Tu Nombre:kazu">     
+   
+    <title>la gata chismosa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!--icono para la pestaña-->
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+<header>
+   <h1>la casa de la gata chismosa</h1> 
+
+   <nav>
+      <ul>                                 <!--cabecera-->
+        <li><a href="indice.html">inicio</a></li>
+        <li><a href="#">veterinarias</a></li>
+        <li><a href="#">peluqueria</a></li>
+        <li class="dropdown"><a href="#">cultura gatuna ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="gatos negros.html">los gatos negros</a></li>
+            <li><a href="gestos gatunos.html">gestos gatunos</a></li>
+            <li><a href="hierba gatera.html">hierba gatera</a></li>
+          </ul>
+        </li>
+        <li><a href="#">emergencias</a></li>
+        <li><a href="#">servicios funebres</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </nav> 
+    </header>
+
+<main class="principal">
+    <h1>contactanos</h1>  
+    <p class="contenidoprincipal"> si quieres aparecer con tus servicios en la pagina o recomendar un lugar
+        o compartir tu articulo contactanos a los siguientes contactos:
+    </p>
+
+    <div class="container">      <!--aqui comienza contenedores-->
+     <i class="bi bi-whatsapp"></i><div class="col">whatssap: +56 930789090</div>
+     <i class="bi bi-envelope-at-fill"></i><div class="col">correo: la.kazu.miau@gmail.com</div>
+     <i class="bi bi-instagram"></i><div class="col">instagram:@kazu.miau</div>
+  </div>
+  
+</main>
+
+  <footer>
+    <p>actualizado al: </p>
+    <p class= "fecha"> 01-01-25 </p>   <!--para poner fecha automatica-->
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

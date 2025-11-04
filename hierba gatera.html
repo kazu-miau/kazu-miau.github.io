@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi primera página en HTML"> <!--descripcion pag web-->
+  <meta name="author" content="Tu Nombre:kazu">
+
+  <title>la gata chismosa</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>la casa de la gata chismosa</h1> <!--lo que queda fijo en la cabecera de la pagina-->
+
+    <nav>
+      <ul> <!--cabecera-->
+        <li><a href="indice.html">inicio</a></li>
+        <li><a href="#">veterinarias</a></li>
+        <li><a href="#">peluqueria</a></li>
+        <li class="dropdown"><a href="#">cultura gatuna ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="gatos negros.html">los gatos negros</a></li>
+            <li><a href="gestos gatunos.html">gestos gatunos</a></li>
+            <li><a href="alimentos peligroso.html">alimentos peligrosos</a></li>
+          </ul>
+        </li>
+        <li><a href="#">emergencias</a></li>
+        <li><a href="#">servicios funebres</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </nav> <!-- fin cabecera-->
+  </header>
+
+  <main class="principal">
+    <!--inicio texto explicativo-->
+    <h1>la hierba gatera y sus propiedades</h1>
+    <div class="contenedorhierba">
+      <img src="imagenes/gato y hierba.webp" class="image-02" alt="">
+      <p class="contenidoprincipal"> La Nepeta cataria, hierba gatera o catnip es una planta herbácea de
+        la familia de la menta, hierbabuena o salvia y es muy atractiva para los felinos debido a una
+        sustancia que se encuentra en su tallo y hojas. Este compuesto está presente en forma de aceite
+        volátil y se llama nepetalactona.Es posible que hayas notado que crece cerca de carreteras
+        rurales o incluso como una adición resistente a la sequía en los jardines de la gente, el Catnip
+        o hierba gatera permite estimular el sistema nervioso de nuestros gatos, ya que estos
+        se sienten atraídos al aroma de la menta gatuna.Cuando los gatos sensibles huelen la hierba gatera
+        suelen exhibir ciertos comportamientos comunes. Pueden restregar la cabeza y el cuerpo en la
+        hierba o saltar, revolcarse, maullar, masticarla y salivar. Seguidamente pueden mostrar euforia
+        o excitación que suele durar entre 5 y 15 minutos la respuesta depende del gato en forma individual.
+    </div>
+    </p> <!--fin texto explicativo-->
+
+    <!--inicio dato en recuadro-->
+    <p class="parrafo">No todos los gatos son sensibles a la hierba gatera, a algunos no les afecta en absoluto,
+      sin embargo funciona en el 50-70% de los gatos, Para saber si tu gato es sensible deberías esperar a
+      que tenga por lo menos 6 meses o 1 año y entonces comprarle un juguete que contenga en su interior la hierba.
+    </p> <!--fin dato en recuadro-->
+
+    <h1>como actua y sus beneficios</h1> <!--inicio 2do contenido-->
+    <div class="contenedorgatorelajado">
+      <p class="contenidoprincipal"> La hierba gatera es un estimulante físico y mental para los gatos,
+        supone un buen método de enriquecimiento ambiental a través del olfato. Además, también incita
+        a los felinos al juego y el ejercicio físico por lo que puede ser una buena aliada contra el
+        sobrepeso y la obesidad.Se cree que estas reacciones están provocadas por la molécula
+        nepetalactona que parece ser un activador del sistema nervioso central del félido. No es una
+        hierba adictiva y no causa ningún daño a los gatos, sus beneficios son la estimulación mental y física,
+        reducción del estrés y estimulación del apetito.
+        <br>
+        <br>
+        La hierba gatera se puede utilizar de diversas formas siendo algunas como
+        muchos juguetes para gatos que están rellenos de hierba gatera para hacerlos más atractivos. También
+        existen cojines, pelotas u otros accesorios diseñados para ser frotados con esta hierba y así
+        estimular el juego,en otros casos se puede ver como una herramienta de entrenamiento para fomentar
+        buenos comportamientos. Por ejemplo, puedes esparcir un poco de hierba gatera en un rascador
+        para incentivar a tu gato a rascar en ese lugar en sustitución a los muebles y decoración
+        del hogar. finalmente algunos dueños de gatos utilizan el catnip para ayudar a sus mascotas
+        a relajarse en situaciones estresantes, como viajes en coche o visitas al veterinario.
+      </p>
+      <img src="imagenes/gato relajado.webp" class="image-03" alt="">
+    </div>
+    <!--fin contenido segundo-->
+
+    <p>ingresar comentario</p> <!-- formula para hacer formulario-->
+    <form>
+      <input type="text" id="mensaje" placeholder="dejar mensaje">
+      <button id="btnenviar">enviar</button>
+    </form> <!--aqui termina ingreso formula para formulario-->
+    <form> <!--como meter texto crudo-->
+      <p id="prueba"></p> <!--texto:atte.kazu-->
+
+    </form> <!--aqui termina como meter texto crudo-->
+
+    <div class="container"> <!--aqui comienza contenedores-->
+      <div class="col"><a href="alimentos peligroso.html">alimentos peligroso</a></div>
+      <div class="col"><a href="indice.html">inicio</a></div>
+      <div class="col"><a href="gestos gatunos.html">gestos gatunos</a></div>
+    </div>
+
+  </main>
+
+
+
+  <footer>
+    <p>actualizado al: </p>
+    <p class="fecha"> 01-01-25 </p> <!--para poner fecha automatica-->
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
