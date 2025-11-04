@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primera página en HTML"> <!--descripcion pag web-->
+    <meta name="author" content="Tu Nombre:kazu">
+
+  <title>la gata chismosa</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+    <h1>la casa de la gata chismosa</h1> <!--lo que queda fijo en la cabecera de la pagina-->
+
+    <nav>
+      <ul> <!--cabecera-->
+        <li><a href="indice.html">inicio</a></li>
+        <li><a href="#">veterinarias</a></li>
+        <li><a href="#">peluqueria</a></li>
+        <li class="dropdown"><a href="#">cultura gatuna ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="gatos negros.html">los gatos negros</a></li>
+            <li><a href="gestos gatunos.html">gestos gatunos</a></li>
+            <li><a href="hierba gatera.html">hierba gatera</a></li>
+          </ul>
+        </li>
+        <li><a href="#">emergencias</a></li>
+        <li><a href="#">servicios funebres</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </nav> <!-- fin cabecera-->
+  </header>
+
+    <main class="principal">
+    <!--inicio texto explicativo-->
+    <h1>atropellos en gatos y como actuar</h1>
+    <div class="contenedorhierba">
+      <img src="imagenes/gato tropellado 1.webp" class="image-02" alt="">
+      <p class="contenidoprincipal"> El tráfico constituye un peligro mortal para muchos animales. 
+        ¿Cómo deben comportarse los conductores si atropellan a un gato? Te damos la información 
+        más importante sobre cómo ayudar a un gato atropellado,en el fondo la pesadilla de 
+        cualquiera al volante es ver un gato salir entre los coches aparcados y lanzarse a la calle. 
+        Todo va tan rápido que no da ni tiempo a frenar ni a esquivarlo. El pobre animal acaba bajo 
+        las ruedas o lanzado a la calle.
+        <br>
+        <br>
+        la manera mas adecuada de actuar es primero mantener la calma,detenerse y auxiliar de manera 
+        segura al animal viendo si tiene alguna placa de contacto o comunicarse con algun vecino de 
+        la zona y sino estan estas opciones tomar con cuidado al animal y llevarlo a un veterinario 
+        pero hay una triste opción si el gato atropellado está claramente muerto y has apartado el 
+        cuerpo de la carretera, ya has cumplido con tu obligación. Por lo tanto, puedes seguir tu camino.
+    </div>
+    <div>
+      <ol>
+        <h3>Primeros auxilios y tratamiento</h3>
+        <h4>si atropellan a tu gato estos son los pasos a realizar</h4>
+
+        <li><b>No muevas al gato si no es necesario: </b>Mantenlo seguro y evita movimientos 
+          innecesarios para no agravar posibles fracturas o heridas internas.</li>
+            <br>
+        <li><b>Viste con cuidado: </b>Usa una manta o toalla gruesa para cogerlo. Esto te protegerá de posibles mordeduras 
+          o arañazos por miedo o dolor, y amortiguará el cuerpo del gato</li>
+            <br>
+        <li><b>TRASLÁDALO CON URGENCIA: </b>Llévalo lo antes posible a un centro veterinario de urgencias. Llama antes 
+          para avisar de tu llegada y dar detalles sobre su estado. </li>
+            <br>
+        <li><b>Si sangra mucho: </b>Puedes presionar la herida con una toalla limpia, pero NO 
+          APLIQUES TORNIQUETES.</li>
+          <br>
+        <li><b>Si tiene heridas en la cabeza: </b>TEN CUIDADO, podría tener fracturas de mandíbula, 
+          conmoción cerebral o convulsiones.</li>
+          <br>
+        <li><b></b></li>
+      </ol>
+    </p> 
+   </div>  <!--fin texto explicativo-->
+
+    <!--inicio dato en recuadro-->
+    <p class="parrafo">SE DICE que si dejas morir un gato o si lo matas SON 7 AÑOS DE MALA SUERTE para el responsable.
+    </p> <!--fin dato en recuadro-->
+
+   <img src="imagenes/gato atropellado 2.webp" class="image-03" alt=""> <!--fin texto explicativo-->
+   
+
+    <!--fin contenido segundo-->
+    <p>ingresar comentario</p>  <!-- fin-->
+    <form> 
+    <input type="text" id="mensaje" placeholder="dejar mensaje">
+      <button id="btnenviar">enviar</button>
+    </form>   <!--aqui termina ingreso formula para formulario-->
+    <form>     <!--como meter texto crudo-->
+      <p id="prueba"></p> <!--texto:atte.kazu-->
+    </form>    <!--aqui termina como meter texto crudo-->
+
+    <div class="container">      <!--aqui comienza contenedores-->
+     <div class="col"><a href="alimentos peligroso.html">alimentos peligrosos</a></div>
+     <div class="col"><a href="index.html">inicio</a></div>
+     <div class="col"><a href="intoxicaciones.html">intoxicaciones felinas</a></div>
+  </div>
+  
+  </main>
+   <footer>
+    <p>actualizado al: </p>
+    <p class= "fecha"> 01-01-25 </p>   <!--para poner fecha automatica-->
+  </footer>
+
+  <script src="js/scripts.js"></script>
+    
+    
+</body>
+</html>
