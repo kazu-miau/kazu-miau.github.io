@@ -299,3 +299,8 @@ button:hover {
   padding: 10px;
   border-radius: 5px;
 }
+
+/*cotenedor imagenes*/
+.image-04 {
+  width: 200px;
+}
